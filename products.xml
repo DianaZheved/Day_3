@@ -1,0 +1,52 @@
+<category id='12'>
+    <product id='1'>
+        <title>Шарфик 1</title>
+        <price>450 грн.</price>
+        <image>/tovimg/1.png</image>
+        <kol>1 шт.</kol>
+        <color>Бордовый</color>
+        <material>Кашемир</material>
+        <company>Warm Scarf</company>
+        <description>Женский платок шарф в клетку. Станет отличным дополнением Вашего образа.</description>
+    </product>
+    <product id='2'>
+        <title>Шарфик 2</title>
+        <price>360 грн.</price>
+        <image>/tovimg/2.png</image>
+        <kol>1 шт.</kol>
+        <color>Бежевый</color>
+        <material>Кашемир</material>
+        <company>Warm Scarf</company>
+        <description>Женский платок шарф в клетку. Станет отличным дополнением Вашего образа.</description>
+    </product>
+    <product id='3'>
+        <title>Шарфик 3</title>
+        <price>260 грн.</price>
+        <image>/tovimg/3.png</image>
+        <kol>1 шт.</kol>
+        <color>Голубой</color>
+        <material>Шерсть</material>
+        <company>Warm Scarf</company>
+        <description>Детский шарф. Станет отличным дополнением Вашего образа.</description>
+    </product>
+    <product id='4'>
+        <title>Шарфик 4</title>
+        <price>350 грн.</price>
+        <image>/tovimg/4.png</image>
+        <kol>1 шт.</kol>
+        <color>Коричневый</color>
+        <material>Шерсть</material>
+        <company>Warm Scarf</company>
+        <description>Детский шарф. Станет отличным дополнением Вашего образа.</description>
+    </product>
+    <product id='5'>
+        <title>Шарфик 5</title>
+        <price>390 грн.</price>
+        <image>/tovimg/5.png</image>
+        <kol>1 шт.</kol>
+        <color>Серый</color>
+        <material>Шерсть</material>
+        <company>Warm Scarf</company>
+        <description>Детский шарф. Станет отличным дополнением Вашего образа.</description>
+    </product>
+</category>
