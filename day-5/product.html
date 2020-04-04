@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <script src="js/jquery.js"></script>       
+        <script src="js/xml2json.js"></script>       
+        <script src="js/jquery.tmpl.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/my.js"></script>
+        <title>Информация о товаре</title>    
+    </head>
+    <body>
+
+        <div class="container-fluid" id="wrapper">
+            <div class="row" id="header" >
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="row" >
+                        <div class="col-xs-4 col-lg-4"></div>
+                        <div class="col-xs-8 col-lg-8 aligncenter">
+                            <input id="input1" type="text" size="40" value="поиск на сайте">
+                            <img  class="mar1 button" src="images/okomp.png">
+                            <img  class="mar1 button" src="images/dost.png">
+                            <div class="stroke pad2 slogan1">
+                                Товары наши хороши - <br>
+                                <div class=" slogan2">
+                                    развивайтесь малыши!
+                                </div>
+                            </div> 
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 aligncenter">
+                    <a href="index.html"><img class="logo" src="images/logo.png" ></a>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pad1 aligncenter">
+                    <img class="mar1" src="images/phone.png"><br>
+                    <img class="mar1" src="images/schedule.png"><br>
+                    <img class="mar1 button" src="images/recall.png"><br>
+                </div>
+            </div>
+            <div class="row" id="content">
+                <div class="col-xs-1 col-lg-1"></div>
+                <div class="col-xs-10 col-lg-10 mainblock">
+                    <div class="textzag1">
+                        <a href="index.html">Главная</a> >> 
+                        <a href="#">Одежда и обувь для малышей</a> >> 
+                        <a href="#">Носки</a>
+                    </div>
+                    <div id="prod_content">
+
+                    </div>
+                </div>
+                <div class="col-xs-1 col-lg-1"></div>
+            </div>
+            <div class="row " id="footer">
+                <div class="col-xs-1 col-lg-1"></div>
+                <div class="col-xs-10 col-lg-10">
+                    <div class="row" >
+                        <div class="col-xs col-sm col-md col-lg padfoot aligncenter">
+                            <img src="images/footerlogo.png" >
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg padfoot aligncenter">
+                            <img id="footcall" src="images/footercall.png" >
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg padfoot aligncenter ">
+                            <div class="blockcenter">
+                                <div class="twi"><div class="icon"></div></div>
+                                <div class="vk"><div class="icon"></div></div>
+                                <div class="fb"><div class="icon"></div></div>
+                                <div class="pen"><div class="icon"></div></div>
+                                <div class="rss"><div class="icon"></div></div>
+                                <div class="mail"><div class="icon"></div></div>
+                                <div class="ok"><div class="icon"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg aligncenter">
+                            <img class="logo" src="images/footergucci.png" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-lg-1"></div>
+            </div>
+        </div>
+        
+        <script id="oneProdTmpl" type="text/x-jquery-tmpl">
+            <div class="textzag2">
+                ${title}
+            </div>
+            <div class="row" >
+                <div class="col-xs col-sm col-md col-lg aligncenter">
+                    <img src="${image}" class="colimg2">
+                </div>
+                <div class="col-xs col-sm col-md col-lg maintxt4">
+
+                    <div class="row" >
+                        <div class="col-xs col-sm col-md col-lg maintxt5" >
+                            Стоимость 
+                            <h4 class="pricetag2 button ">
+                                ${price}
+                            </h4>
+
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg">
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="row" >
+                        <div class="col-xs col-sm col-md col-lg" >
+                            Количество
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg">
+                            ${kol}
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row" >
+                        <div class="col-xs col-sm col-md col-lg" >
+                            Цвет
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg">
+                            ${color}
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row" >
+                        <div class="col-xs col-sm col-md col-lg" >
+                            Материал
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg">
+                            ${material}
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row" >
+                        <div class="col-xs col-sm col-md col-lg" >
+                            Производитель
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg">
+                            ${company}
+                        </div>
+                    </div>
+                    <hr>
+
+
+        
+                    <div class="row" >
+                        <div class="col-xs col-sm col-md col-lg" >
+                            <img src="images/nalich.png">
+                        </div>
+                        <br><br>
+                        <div class="col-xs col-sm col-md col-lg">
+                            <a href="#" data-id="${id}" data-name="${title}" data-link="cart.html" class="buy"><img src="images/buttonvkor.png" class="button"></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="maintxt4 ">
+                <br><br>
+                <div class="maintxt5 " >
+                    Описание
+                </div> <br>
+                <div  >
+                    ${description}
+                </div>
+                
+            </div>
+        </script>
+        <script>
+            new MyShop('products.xml','product')
+        </script>
+    </body>
+</html>

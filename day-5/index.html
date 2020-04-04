@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <script src="js/jquery.js"></script>    
+        <script src="js/xml2json.js"></script>       
+        <script src="js/jquery.tmpl.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/my.js"></script>
+        <link rel="manifest" href="manifest.json">
+        <title>Два гуся</title>   
+        <script>
+            if ('serviceWorker' in navigator) {
+           navigator.serviceWorker
+           .register('/sw.js')
+           .then(function() {
+               console.log('Service worker registered!');
+           });
+       }
+
+        </script>
+        
+    </head>
+    <body>
+
+        <div class="container-fluid" id="wrapper">
+            <div class="row" id="header" >
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="row" >
+                        <div class="col-xs-4 col-lg-4"></div>
+                        <div class="col-xs-8 col-lg-8 aligncenter">
+                            <input id="input1" type="text" size="40" value="поиск на сайте">
+                            <button class="subscribe-for-push">SUBSCRIBE FOR PUSH NOTIFICATIONS</button> <br>
+                            <img  class="mar1 button" src="images/okomp.png">
+                            <img  class="mar1 button" src="images/dost.png">
+                            <div class="stroke pad2 slogan1">
+                                Товары наши хороши - <br>
+                                <div class=" slogan2">
+                                    развивайтесь малыши!
+                                </div>
+                            </div> 
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 aligncenter">
+                    <a href="index.html"><img class="logo" src="images/logo.png" ></a>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pad1 aligncenter">
+                    <img class="mar1" src="images/phone.png"><br>
+                    <img class="mar1" src="images/schedule.png"><br>
+                    <img class="mar1 button" src="images/recall.png"><br>
+                </div>
+            </div>
+            <div class="row" id="content">
+                <div class="col-xs-1 col-lg-1"></div>
+                <div class="col-xs-10 col-lg-10">
+                    <div class="row" >
+                        <div class="col-xs col-sm col-md col-lg maintxt1">
+                            <a href="page2.html"><img src="images/kolyaski.png" class="mainimg"></a>
+                            <br>
+                                Коляски для новорожденных<br>
+                                Прогулочные коляски<br>
+                                Коляски трости<br>
+                                Универсальные коляски<br>
+                                Коляски для двойни<br>
+                                Конверты<br>
+                                Защита от дождя и солнца<br>
+                                Сумки к коляскам<br>
+                                Запчасти<br>
+                            <img src="images/mebelimatras.png" class="mainimg"><br>
+                                Детские кровати<br>
+                                Матрасы<br>
+                                Стульчики для кормления<br>
+                                Манежи<br>
+                                Пеленальные столы<br>
+                                Шкафы<br>
+                            <img src="images/avtokresla.png" class="mainimg"><br>
+                                Группа 0,0+ (0-13кг)<br>
+                                Группа 0,1 (0-18кг)<br>
+                                Группа 1 (9-18кг)<br>
+                                Группа 1,2 (9-25кг)<br>
+                                Группа 1,2,3 (9-36кг)<br>
+                                Группа 2,3 (15-36кг)<br>
+                                Группа 3 (22-36кг)<br>
+                                Аксесуары для автокресел<br>
+                            <img src="images/razvitie.png" class="mainimg"><br>
+                                Ходунки<br>
+                                Интерактивные книжки<br>
+                                Обучающие компьютеры<br>
+                                Прыгунки<br>
+                            <img src="images/zimniet.png" class="mainimg"><br>
+                                Саночки, Снегокаты, Тюбинги<br>
+                                Ёлочные украшения<br>
+                                Ёлки<br>
+                                Лыжи<br>
+                                Коньки<br>
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg maintxt1" >
+                            <img src="images/oddlyam.png" class="mainimg"><br>
+                                Шапочки<br>
+                                Шарфики<br>
+                                Комбинезончики<br>
+                                Курточки<br>
+                                Ботиночки<br>
+                                <a href="category.html#cat_id=16">Носочки</a><br>
+                                Пеленочки<br>
+                                Распашеночки<br>
+                                Чепчики<br>
+                            <img src="images/oddlyaber.png" class="mainimg"><br>
+                                <b>ОДЕЖДА ДЛЯ БЕРЕМЕННЫХ<br></b> 
+                                Брюки, капри<br>
+                                Лосины, леггенсы<br>
+                                Комбинезоны<br>
+                                Джинсы<br>
+                                Блузы, туники<br>
+                                Водолазки<br>
+                                Джемперы, накидки<br>
+                                Платья, сарафаны<br>
+                                Костюмы<br>
+                                Юбки<br>
+                                Для отдыха и сна<br>
+                                Верхняя одежда<br><br>
+                                <b>БЕЛЬЕ ДЛЯ БЕРЕМЕННЫХ<br></b> 
+                                Белье дородовое<br>
+                                Бандажи дородовые<br>
+                                Трусы дородовые<br>
+                                Белье для кормления<br>
+                                Бандажи послеродовые<br>
+                                Колготки, лосины<br>
+                                Купальники<br><br>
+                                <b>СОПУТСТВУЮЩИЕ ТОВАРЫ<br></b>
+                                Подушки для кормления<br>
+                                Слинги с кольцами<br>
+                                Ремень безопасности для беременных<br>
+                                Ремень безопасности для детей<br>
+                                Браслет от токсикоза<br>
+                                Накладной животи<br>
+
+                            <img src="images/tovposn.png" class="mainimg"><br>
+                                Уцененные товары<br>
+                                Комиссионные товары<br>
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg maintxt1">
+                            <img src="images/gigiena.png" class="mainimg"><br>
+                                Ванночки<br>
+                                Горшочки<br>
+                                Подгузники<br>
+                            <img src="images/igrushki.png" class="mainimg"><br>
+                                Игрушечки<br>
+                                Мягкие игрушечки<br>
+                                Игровые домики<br>
+                                Конструкторы<br>
+                                Электромобильчеки<br>
+                            <img src="images/activeg.png" class="mainimg"><br>
+                                Велосипедики<br>
+                                Самокатики<br>
+                                Качельки<br>
+                                Горочки<br>
+                            <img src="images/tovdlyam.png" class="mainimg"><br>
+                                Блендеры<br>
+                                Видеоняня<br>
+                                Ночники<br>
+                                Термометры<br>
+                                Подогреватели для бутылочек<br>
+                                Увлажнители очестители<br>
+                                Воздуха<br>
+                                Стерилизаторы<br>
+                                Молокоотсосы<br>
+                                Электронные весы<br>
+                                Радионяни<br>
+                                Рюкзаки-кенгуру<br>
+                                Бутылочки<br>
+                                Соски<br>
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg aligncenter">
+                            <div class="cloud mainimg" >
+                                <div id="textcloud">
+                                    В ваше корзине <br>
+                                    <b>7 товаров<br></b>
+                                    <b>на сумму 14900 руб.<br></b>
+                                </div>
+                                <img src="images/buttonoform.png" id="button1">
+                            </div>
+                            <div class="row brands maintxt1">
+                                <div class="col-xs col-sm col-md col-lg brands1">
+
+                                </div>
+                                <div class="col-xs col-sm col-md col-lg brands2">
+
+                                </div>
+                            </div>
+                            <!--div class="brands" style="background-color: blueviolet;">
+                                
+                            </div-->
+                            <br>
+                            <img src="images/pan3.png" class="mainimg"><br>
+                            <img src="images/pan4.png" class="mainimg"><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-lg-1"></div>
+            </div>
+            <div class="row " id="footer">
+                <div class="col-xs-1 col-lg-1"></div>
+                <div class="col-xs-10 col-lg-10">
+                    <div class="row" >
+                        <div class="col-xs col-sm col-md col-lg padfoot aligncenter">
+                            <img src="images/footerlogo.png" >
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg padfoot aligncenter">
+                            <img id="footcall" src="images/footercall.png" >
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg padfoot aligncenter ">
+                            <div class="blockcenter">
+                                <div class="twi"><div class="icon"></div></div>
+                                <div class="vk"><div class="icon"></div></div>
+                                <div class="fb"><div class="icon"></div></div>
+                                <div class="pen"><div class="icon"></div></div>
+                                <div class="rss"><div class="icon"></div></div>
+                                <div class="mail"><div class="icon"></div></div>
+                                <div class="ok"><div class="icon"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg aligncenter">
+                            <img class="logo" src="images/footergucci.png" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-lg-1"></div>
+            </div>
+        </div>
+        
+    </body>
+
+<script>
+    fetch('https://restcountries.eu/rest/v2/regionalbloc/eu')
+    .then((response) => {
+        return response.json();
+    })
+    .then((resp) => {
+        const listOfCapitals1=document.createElement('ul');
+        listOfCapitals1.classList.add("category-items1");
+        const listOfCapitals2=document.createElement('ul');
+        listOfCapitals2.classList.add("category-items2");
+        var i=1;
+        resp.forEach(function(item) {
+            var listViewItem=document.createElement('li');
+            listViewItem.appendChild(document.createTextNode(item.capital));
+            if (i<18) {
+                listOfCapitals1.appendChild(listViewItem);
+            }
+            else {
+                listOfCapitals2.appendChild(listViewItem);
+            }
+            i++;
+        });
+        document.getElementsByClassName("brands1")[0].appendChild(listOfCapitals1);
+        document.getElementsByClassName("brands2")[0].appendChild(listOfCapitals2);
+    });
+</script>
+
+<script>
+    function askPermission() {
+        return new Promise(function(resolve, reject) {
+            const permissionResult = Notification.requestPermission(function(result) {
+                resolve(result);
+            });
+            if (permissionResult) {
+                permissionResult.then(resolve, reject);
+            }
+        })
+        .then(function(permissionResult) {
+            if (permissionResult !== 'granted') {
+                throw new Error('We werent\'t granted permission.');
+            }
+        });
+    }
+
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+        .register('/sw.js')
+        .then(function() {
+            console.log('Service worker registered!');
+        });
+
+        navigator.serviceWorker.ready.then(registration => {
+            if ('PushManager' in window) {
+                document.querySelector('button.subscribe-for-push')
+                    .addEventListener('click', () => {
+                        askPermission()
+                    });
+            }
+        });
+    }
+</script>
+
+</html>

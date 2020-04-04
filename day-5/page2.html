@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <script src="js/jquery.js"></script>       
+        <script src="js/xml2json.js"></script>       
+        <script src="js/jquery.tmpl.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/my.js"></script>
+        <title>Коляски</title>    
+    </head>
+    <body>
+
+        <div class="container-fluid" id="wrapper">
+            <div class="row" id="header" >
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="row" >
+                        <div class="col-xs-4 col-lg-4"></div>
+                        <div class="col-xs-8 col-lg-8 aligncenter">
+                            <input id="input1" type="text" size="40" value="поиск на сайте">
+                            <img  class="mar1 button" src="images/okomp.png">
+                            <img  class="mar1 button" src="images/dost.png">
+                            <div class="stroke pad2 slogan1">
+                                Товары наши хороши - <br>
+                                <div class=" slogan2">
+                                    развивайтесь малыши!
+                                </div>
+                            </div> 
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 aligncenter">
+                    <a href="index.html"><img class="logo" src="images/logo.png" ></a>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pad1 aligncenter">
+                    <img class="mar1" src="images/phone.png"><br>
+                    <img class="mar1" src="images/schedule.png"><br>
+                    <img class="mar1 button" src="images/recall.png"><br>
+                </div>
+            </div>
+            <div class="row" id="content">
+                <div class="col-xs-1 col-lg-1"></div>
+                <div class="col-xs-10 col-lg-10">
+                    <div class="row" >
+                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9" >
+                            <div class="textzag1">
+                                <a href="index.html">Главная</a> >> 
+                                <a href="#">Товары для детей</a> >> 
+                                <a href="#">Коляски</a>
+                            </div>
+                            <div class="textzag2">
+                                Детские коляски
+                            </div>
+                            <div class="container-fluid block1 " id="blockt">
+                                <div class="row">
+                                    <div class="col-xs col-sm col-md col-lg vl menu1">Сортировать:</div>
+                                    <div class="col-xs col-sm col-md col-lg vl menu1 menuclick">По популярности</div>
+                                    <div class="col-xs col-sm col-md col-lg vl menu1 menuclick">По цене</div>
+                                    <div class="col-xs col-sm col-md col-lg vl menu1 menuclick">По цене и наличию</div>
+                                    <div class="col-xs col-sm col-md col-lg menu1 menuclick">По брендам</div>
+                                </div>
+                            </div>
+                            <div class="container-fluid block2">
+                                <div class="row" >
+                                    <div class="col-xs col-sm col-md col-lg">
+                                        <a href="page3.html"><img src="images/kol1.png" class="colimg"></a>
+                                    </div>
+                                    <div class="col-xs col-sm col-md col-lg maintxt4">
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Тип
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Прогулочная
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Количество блоков
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Один
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Механизм складывания
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Трость
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Количество колес
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                8
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Колеса
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Резиновые
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Максимальный возраст
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                3 года
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Цвет
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Синий
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                <img src="images/buttonvkor.png" class="button">
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg"></div>
+                                        </div>    
+                                    </div>
+                                    <div class="col-xs col-sm col-md col-lg aligncenter">
+                                        <img src="images/nalich.png" class="contimg"><br>
+                                        <s>1580 руб.</s><br>
+                                        <img src="images/pricetag.png" class="contimg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid block2">
+                                <div class="row" >
+                                    <div class="col-xs col-sm col-md col-lg">
+                                        <img src="images/kol2.png" class="colimg">
+                                    </div>
+                                    <div class="col-xs col-sm col-md col-lg maintxt4">
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Тип
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Прогулочная
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Количество блоков
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Один
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Механизм складывания
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Трость
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Количество колес
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                8
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Колеса
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Резиновые
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Максимальный возраст
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                3 года
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Цвет
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Синий
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                <img src="images/buttonvkor.png" class="button">
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg"></div>
+                                        </div>    
+                                    </div>
+                                    <div class="col-xs col-sm col-md col-lg aligncenter">
+                                        <img src="images/podz.png" class="contimg"><br>
+                                        <s>1580 руб.</s><br>
+                                        <img src="images/pricetag.png" class="contimg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid block2">
+                                <div class="row" >
+                                    <div class="col-xs col-sm col-md col-lg">
+                                        <img src="images/kol3.png" class="colimg">
+                                    </div>
+                                    <div class="col-xs col-sm col-md col-lg maintxt4">
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Тип
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Прогулочная
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Количество блоков
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Один
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Механизм складывания
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Трость
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Количество колес
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                8
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Колеса
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Резиновые
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Максимальный возраст
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                3 года
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Цвет
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Синий
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                <img src="images/buttonvkor.png" class="button">
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg"></div>
+                                        </div>    
+                                    </div>
+                                    <div class="col-xs col-sm col-md col-lg aligncenter">
+                                        <img src="images/nalich.png" class="contimg"><br>
+                                        <s>1580 руб.</s><br>
+                                        <img src="images/pricetag.png" class="contimg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid block2">
+                                <div class="row" >
+                                    <div class="col-xs col-sm col-md col-lg">
+                                        <img src="images/kol4.png" class="colimg">
+                                    </div>
+                                    <div class="col-xs col-sm col-md col-lg maintxt4">
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Тип
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Прогулочная
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Количество блоков
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Один
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Механизм складывания
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Трость
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Количество колес
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                8
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Колеса
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Резиновые
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Максимальный возраст
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                3 года
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Цвет
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Синий
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                <img src="images/buttonvkor.png" class="button">
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg"></div>
+                                        </div>    
+                                    </div>
+                                    <div class="col-xs col-sm col-md col-lg aligncenter">
+                                        <img src="images/nalich.png" class="contimg"><br>
+                                        <s>1580 руб.</s><br>
+                                        <img src="images/pricetag.png" class="contimg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid block2">
+                                <div class="row" >
+                                    <div class="col-xs col-sm col-md col-lg">
+                                        <img src="images/kol5.png" class="colimg">
+                                    </div>
+                                    <div class="col-xs col-sm col-md col-lg maintxt4">
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Тип
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Прогулочная
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Количество блоков
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Один
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Механизм складывания
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Трость
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Количество колес
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                8
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Колеса
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Резиновые
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Максимальный возраст
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                3 года
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Цвет
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Синий
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                <img src="images/buttonvkor.png" class="button">
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg"></div>
+                                        </div>    
+                                    </div>
+                                    <div class="col-xs col-sm col-md col-lg aligncenter">
+                                        <img src="images/nalich.png" class="contimg"><br>
+                                        <s>1580 руб.</s><br>
+                                        <img src="images/pricetag.png" class="contimg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid block2">
+                                <div class="row" >
+                                    <div class="col-xs col-sm col-md col-lg">
+                                        <img src="images/kol6.png" class="colimg">
+                                    </div>
+                                    <div class="col-xs col-sm col-md col-lg maintxt4">
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Тип
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Прогулочная
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Количество блоков
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Один
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Механизм складывания
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Трость
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Количество колес
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                8
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Колеса
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Резиновые
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Максимальный возраст
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                3 года
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                Цвет
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg">
+                                                Синий
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row" >
+                                            <div class="col-xs col-sm col-md col-lg" >
+                                                <img src="images/buttonvkor.png" class="button">
+                                            </div>
+                                            <div class="col-xs col-sm col-md col-lg"></div>
+                                        </div>    
+                                    </div>
+                                    <div class="col-xs col-sm col-md col-lg aligncenter">
+                                        <img src="images/nalich.png" class="contimg"><br>
+                                        <s>1580 руб.</s><br>
+                                        <img src="images/pricetag.png" class="contimg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid block1 pad3" id="blockd">
+                                    <div class="blockdb aligncenter button">Назад</div>
+                                    <div class="blockdr aligncenter button">1</div>
+                                    <div class="blockdr aligncenter button">2</div>
+                                    <div class="blockdr aligncenter button">3</div>
+                                    <div class="blockdr aligncenter button">4</div>
+                                    <div class="blockdr aligncenter button">...</div>
+                                    <div class="blockdr aligncenter button">9</div>
+                                    <div class="blockdb aligncenter button">Вперед</div>
+                                    <div class="blockdb aligncenter button">по 10</div>
+                                    <div class="blockdb aligncenter button">по 20</div>
+                                    <div class="blockdb aligncenter button">Все</div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 aligncenter">
+                            <div class="cloud mainimg" >
+                                <div id="textcloud">
+                                    В ваше корзине <br>
+                                    <b>7 товаров<br></b>
+                                    <b>на сумму 14900 руб.<br></b>
+                                </div>
+                                <img src="images/buttonoform.png" id="button1">
+                            </div>
+                            <div class="container-fluid" id="bs1">
+                                <div class="container-fluid" id ="slider1">
+                                    <input type="text" size="10" id="amount" readonly>
+                                    <br><br>
+                                    <div id="slider-range"></div>
+                                </div>
+                            </div>
+                            <div class="container-fluid" id="bs2">
+                                <div class="spisok maintxt3">
+                                    <ul>
+                                        <li>Коляски для новорожденных</li>
+                                        <li>Прогулочные коляски</li>
+                                        <li>Коляски трости</li>
+                                        <li>Универсальные коляски</li>
+                                        <li>Коляски для двойни</li>
+                                        <li>Конверты</li>
+                                        <li>Защита от солнца и дождя</li>
+                                        <li>Сумки к коляскам</li>
+                                        <li>Запчасти</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="container-fluid" id="bs3">
+                                <div class="spisok maintxt3">
+                                    <ul>
+                                        <li>ABC Design</li><br>
+                                        <li>Adamex</li><br>
+                                        <li>Androx</li><br>
+                                        <li>Aneco</li><br>
+                                        <li>Anmar</li><br>
+                                        <li>Baby Car</li><br>
+                                        <li>Bebetto</li><br>
+                                        <li>Capella</li><br>
+                                        <li>Navington</li><br>
+                                        <li>Peg Perego</li><br>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="container-fluid" id="bs4">
+                                <div class="filter maintxt3">
+                                    <ul>
+                                        <li>
+                                            Механизм складывания
+                                            <ul class="child">
+                                                Механизм 1<br>
+                                                Механизм 2<br>
+                                            </ul>
+                                        </li>
+                                        <li>Колеса
+                                            <ul class="child">
+                                                3 шт<br>
+                                                4 шт<br>
+                                                6 шт<br>
+                                            </ul>
+                                        </li>
+                                        <li>Кол-во колес
+                                            <ul class="child">
+                                                3 шт<br>
+                                                4 шт<br>
+                                                6 шт<br>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Максимальный возраст
+                                            <ul class="child">
+                                                до 3 лет<br>
+                                                до 6 лет<br>
+                                                до 12 лет<br>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Цвет
+                                            <ul class="child">
+                                                Красный<br>
+                                                Желтый<br>
+                                                Фиолетовый<br>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="container-fluid" id="bs5">
+                                <div class="filter maintxt3">
+                                    <ul>
+                                        <li>
+                                            Коляски
+                                            <ul class="child">
+                                                1<br>
+                                                2<br>
+                                                3<br>
+                                            </ul>
+                                        </li>
+                                    </ul><br> 
+                                    <ul>
+                                        <li>
+                                            Мебель и матрасы
+                                            <ul class="child">
+                                                1<br>
+                                                2<br>
+                                                3<br>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            Автокресла
+                                            <ul class="child">
+                                                1<br>
+                                                2<br>
+                                                3<br>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            Развитие
+                                            <ul class="child">
+                                                1<br>
+                                                2<br>
+                                                3<br>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            Зимние товары
+                                            <ul class="child">
+                                                1<br>
+                                                2<br>
+                                                3<br>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            Одежда и обувь для малышей
+                                            <ul class="child">
+                                                1<br>
+                                                2<br>
+                                                3<br>
+                                            </ul>
+                                        </li>
+                                    </ul><br>
+                                    <ul>
+                                        <li>
+                                            Одежда для беременных
+                                            <ul class="child">
+                                                1<br>
+                                                2<br>
+                                                3<br>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            Товары по сниженым ценам
+                                            <ul class="child">
+                                                1<br>
+                                                2<br>
+                                                3<br>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            Гигиена
+                                            <ul class="child">
+                                                1<br>
+                                                2<br>
+                                                3<br>
+                                            </ul>
+                                        </li>
+                                    </ul><br><br>
+                                    <ul>
+                                        <li>Активные игры
+                                            <ul class="child">
+                                                1<br>
+                                                2<br>
+                                                3<br>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            Товары для мам, малышей, электроника
+                                            <ul class="child">
+                                                1<br>
+                                                2<br>
+                                                3<br>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="container-fluid" id="bs6">
+                                    
+                            </div>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-xs-1 col-lg-1"></div>
+            </div>
+            <div class="row " id="footer">
+                <div class="col-xs-1 col-lg-1"></div>
+                <div class="col-xs-10 col-lg-10">
+                    <div class="row" >
+                        <div class="col-xs col-sm col-md col-lg padfoot aligncenter">
+                            <img src="images/footerlogo.png" >
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg padfoot aligncenter">
+                            <img id="footcall" src="images/footercall.png" >
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg padfoot aligncenter ">
+                            <div class="blockcenter">
+                                <div class="twi"><div class="icon"></div></div>
+                                <div class="vk"><div class="icon"></div></div>
+                                <div class="fb"><div class="icon"></div></div>
+                                <div class="pen"><div class="icon"></div></div>
+                                <div class="rss"><div class="icon"></div></div>
+                                <div class="mail"><div class="icon"></div></div>
+                                <div class="ok"><div class="icon"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg aligncenter">
+                            <img class="logo" src="images/footergucci.png" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-lg-1"></div>
+            </div>
+        </div>
+        
+    </body>
+</html>

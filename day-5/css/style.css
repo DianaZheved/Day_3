@@ -1,0 +1,616 @@
+@font-face {
+    font-family: 'RotondaBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('RotondaBold'),
+         url('../fonts/RotondaBold.svg') format('svg'), 
+         url('../fonts/RotondaBold.woff') format('woff'),
+         url('../fonts/RotondaBold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'RotondaC';
+    font-style: normal;
+    font-weight: normal;
+    src: local('RotondaC'),
+         url('../fonts/RotondaC.svg') format('svg'), 
+         url('../fonts/RotondaC.woff') format('woff'),
+         url('../fonts/RotondaC.ttf') format('ttf');
+}
+
+body {
+    background-image: url('../images/bg.png');
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background:url('../images/top2.png'), url('../images/top1.png');
+    background-repeat: repeat-x, repeat;
+    background-position: left bottom, left top;
+}
+
+#footer {
+    background:url('../images/footerbg2.png'), url('../images/footerbg1.png');
+    background-repeat: repeat-x, repeat;
+    background-position: left top, left bottom;
+}
+
+.aligncenter {
+    text-align: center !important;
+}
+
+.logo {
+    padding-top: 30px;
+    width: 100%;
+}
+
+.pad1 {
+    padding-top: 40px;
+}
+
+.pad2 {
+    padding-top: 7px;
+}
+
+.padfoot {
+    padding-top: 150px;
+}
+
+.mar1 {
+    margin-top: 10px;
+}
+
+.stroke {
+    text-shadow: white 1px 1px 0, white -1px -1px 0, 
+                 white -1px 1px 0, white 1px -1px 0;
+}
+
+.slogan1 {
+    font-family: 'RotondaBold';
+    line-height: 200%;
+    font-size: 100%;
+    color: #17577a;
+}
+
+.slogan2 {
+    font-size: 90%;
+}
+
+#input1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    width: 100%;
+    box-shadow: 2px 2px 5px black;
+    height: 35px;
+    padding-left: 15px;
+    background-image: url('../images/searchicon.png');
+    background-position-x:  98%;
+    background-position-y:  50%;
+    background-repeat: no-repeat;
+}
+
+.maintxt1 {
+    margin-left: 10px;
+    font-family: RotondaC;
+    line-height: 20px;
+    font-size: 80%;
+    color: black;
+}
+
+.mainimg {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cloud {
+    background:url('../images/cloud.png');
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#button1 {
+    display: block; 
+    padding-left: 40px !important;
+    padding-top: 10px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+#textcloud {
+    font-family: RotondaC;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.footerimg {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footcall {
+    margin-top: 15px;
+}
+
+.icon {
+    margin-top: 15px;
+    width: 24px;
+    height: 24px;
+    float: left;
+    background: url(../images/footersoc.png) no-repeat;
+}
+
+.twi .icon {
+    background-position: 0px 0px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.vk .icon {
+    background-position: -30px 0px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.fb .icon {
+    background-position: -60px 0px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.pen .icon {
+    background-position: -90px 0px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.rss .icon {
+    background-position: -120px 0px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.mail .icon {
+    background-position: -150px 0px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.ok .icon {
+    background-position: -180px 0px;
+    cursor: pointer;
+}
+
+.blockcenter {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    cursor: pointer;
+}
+
+
+
+
+
+#blockt {
+    background:url('../images/block1.png');
+    height: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#blockd {
+    background:url('../images/block1.png');
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.block2 {
+    background:url('../images/block2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+.maintxt2 {
+    margin-left: 10px;
+    font-family: RotondaBold;
+    line-height: 20px;
+    font-size: 100%;
+    color: black;
+}
+
+.colimg {
+    margin-top: 40px;
+}
+
+#bs1 {
+    background:url('../images/bs1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 280px;
+
+    margin-bottom: 20px; 
+
+   
+}
+
+#bs2 {
+    background:url('../images/bs2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 350px;
+    margin-bottom: 20px; 
+    padding-right: 180px;
+    padding-left: 10px;
+    padding-top: 50px;
+}
+
+#bs3 {
+    background:url('../images/bs3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    margin-bottom: 20px; 
+    padding-right: 180px;
+    padding-left: 10px;
+    padding-top: 70px;
+}
+
+#bs4 {
+    background:url('../images/bs4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 370px;
+    margin-bottom: 20px; 
+    padding-right: 190px;
+    padding-left: 10px;
+    padding-top: 50px;
+}
+
+#bs5 {
+    background:url('../images/bs5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 440px;
+    margin-bottom: 20px; 
+    padding-right: 180px;
+    padding-left: 10px;
+    padding-top: 50px;
+}
+
+#bs6 {
+    background:url('../images/bs6.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 135px;
+    margin-bottom: 20px; 
+}
+
+#amount {
+    border:0; 
+    color:#f6931f; 
+    font-weight:bold;
+}
+
+#slider1 {
+    padding-right: 140px;
+    padding-top: 80px;
+}
+
+.filter > ul > li{
+    background:url('../images/plus.png') no-repeat;
+    float: left;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.filter > ul > li.active{
+    background:url('../images/minus.png') no-repeat;
+    float: left;
+    cursor: pointer;
+    padding-left: 20px;
+}   
+
+.filter > ul > li .child{
+    display: none;
+}
+
+.filter > ul > li.active .child{
+    display: block;
+}
+
+.maintxt3 {
+    margin-left: 20px;
+    font-family: RotondaC;
+    font-size: 80%;
+    color: black;
+    text-align: left;
+}
+
+li {
+    list-style-type: none; 
+   }
+   ul {
+    margin-left: 0; 
+    padding-left: 0;
+}
+
+.spisok > ul > li{
+    background:url('../images/tickf.png') no-repeat;
+    float: left;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.spisok > ul > li.active{
+    background:url('../images/tickt.png') no-repeat;
+    float: left;
+    cursor: pointer;
+    padding-left: 20px;
+}   
+
+.contimg {
+    margin: 40px;
+}
+
+.maintxt4 {
+    font-family: RotondaC;
+    font-size: 80%;
+    color: black;
+    text-align: left;
+    margin: 0;
+}
+
+.vl {
+    border-right: 4px solid #fbf3eb;
+    height: 50px;
+}
+
+.menu1 {
+    margin-top: 25px;
+    padding-top: 10px;
+    font-family: RotondaC;
+    font-size: 100%;
+    color: black;
+}
+
+.menuclick {
+    cursor: pointer;
+}
+
+.menuclick.active{
+    background-color: lightblue;
+}
+
+.blockdb {
+    background: url('../images/b6block.png') no-repeat;
+    background-size: cover;
+    margin: 10px;
+    float: left;
+    width: 70px;
+    height: 30px;
+
+}
+
+.blockdr {
+    background: url('../images/b6round.png') no-repeat;
+    background-size: cover;
+    margin: 10px;
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.pad3 {
+    padding-top: 30px;
+}
+
+.textzag2 {
+    font-family: 'RotondaBold';
+    line-height: 200%;
+    font-size: 200%;
+    color: #17577a;
+}
+
+.textzag1 {
+    font-family: 'RotondaC';
+    line-height: 100%;
+    font-size: 80%;
+    color: #17577a;
+    margin-top: 30px;
+ 
+}
+
+
+
+
+
+.mainblock{
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+
+.colimg2 {
+    margin-top: 40px;
+}
+
+.maintxt5 {
+    font-family: RotondaBold;
+    line-height: 20px;
+    font-size: 150%;
+    color: black;
+}
+
+
+
+
+
+.mainblock4{
+    background: url(../images/osn4.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 2200px;
+    padding-top: 200px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.osnimg {
+    position: relative;
+    width: 75%;
+
+}
+
+.osntxt1 {
+    margin-bottom: 80px;
+    font-size: 300% ;
+}
+
+.texttabl {
+    margin-left: 20px;
+}
+
+.input2 {
+    margin-bottom: 15px;
+    width: 100%;
+    box-shadow: 2px 2px 5px black;
+    height: 35px;
+    padding-left: 15px;
+
+}
+
+.text2 {
+    font-family: 'RotondaC';
+    line-height: 100%;
+    font-size: 100%;
+    color: #17577a;
+    margin-top: 30px;
+}
+
+.radio > ul > li{
+    background:url('../images/radiof.png') no-repeat;
+    float: left;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.radio > ul > li.active{
+    background:url('../images/radiot.png') no-repeat;
+    float: left;
+    cursor: pointer;
+    padding-left: 30px;
+} 
+
+.maintxt6 {
+    font-family: 'RotondaC';
+    line-height: 200%;
+    font-size: 150%;
+    color:black;
+}
+
+.tov {
+    background: url(../images/tovbg.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: 20px;
+    padding-top: 40px;
+    height: 170px;
+}
+
+
+
+
+
+#prod_content{
+
+}
+
+.block3 {
+    background:url('../images/block2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.pricetag {
+    background: url(../images/pricetagbg.png) no-repeat;
+    background-position: center;
+    height: 50px;
+    padding-top: 10px;
+    color: white;
+    font-family: RotondaBold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pricetag2 {
+    background: url(../images/pricetagbg.png) no-repeat;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 5px;
+    color: white;
+    font-family: RotondaBold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+
+
+
+.korimg {
+    
+    margin-left: 30px;
+    width: 15%;
+}
+
+
+.brands {
+    background: url(../images/brandsbg.png) no-repeat;
+    background-position: top center;
+    height: 480px;
+    padding-top: 70px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.category-items1 {
+    padding-left: 80px;
+}
+
+.category-items2 {
+    padding-right: 60px;
+}
+
+
+.subscribe-for-push {
+    font-size: 13px;
+
+}
+
+/*style="background-color: blueviolet;"*/

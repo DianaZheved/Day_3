@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <script src="js/jquery.js"></script>       
+        <script src="js/xml2json.js"></script>       
+        <script src="js/jquery.tmpl.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/my.js"></script>
+        <title>Носки</title>    
+    </head>
+    <body>
+
+        <div class="container-fluid" id="wrapper">
+            <div class="row" id="header" >
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="row" >
+                        <div class="col-xs-4 col-lg-4"></div>
+                        <div class="col-xs-8 col-lg-8 aligncenter">
+                            <input id="input1" type="text" size="40" value="поиск на сайте">
+                            <img  class="mar1 button" src="images/okomp.png">
+                            <img  class="mar1 button" src="images/dost.png">
+                            <div class="stroke pad2 slogan1">
+                                Товары наши хороши - <br>
+                                <div class=" slogan2">
+                                    развивайтесь малыши!
+                                </div>
+                            </div> 
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 aligncenter">
+                    <a href="index.html"><img class="logo" src="images/logo.png" ></a>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pad1 aligncenter">
+                    <img class="mar1" src="images/phone.png"><br>
+                    <img class="mar1" src="images/schedule.png"><br>
+                    <img class="mar1 button" src="images/recall.png"><br>
+                </div>
+            </div>
+            <div class="row" id="content">
+                <div class="col-xs-2 col-lg-2"></div>
+                <div class="col-xs-8 col-lg-8 ">
+                    <div class="textzag1">
+                        <a href="index.html">Главная</a> >> 
+                        <a href="#">Одежда и обувь для малышей</a> >> 
+                        <a href="#">Носки</a>
+                    </div>
+                    <div class="textzag2">
+                        Детские носки
+                    </div>
+                    <div class="container-fluid block1 " id="blockt">
+                        <div class="row">
+                            <div class="col-xs col-sm col-md col-lg vl menu1">Сортировать:</div>
+                            <div class="col-xs col-sm col-md col-lg vl menu1 menuclick">По популярности</div>
+                            <div class="col-xs col-sm col-md col-lg vl menu1 menuclick">По цене</div>
+                            <div class="col-xs col-sm col-md col-lg vl menu1 menuclick">По цене и наличию</div>
+                            <div class="col-xs col-sm col-md col-lg menu1 menuclick">По брендам</div>
+                        </div>
+                    </div>
+                    <div id="prod_content">
+                        
+                    </div>
+                </div>  
+                <div class="col-xs-2 col-lg-2"></div>
+            </div>
+            <div class="row " id="footer">
+                <div class="col-xs-1 col-lg-1"></div>
+                <div class="col-xs-10 col-lg-10">
+                    <div class="row" >
+                        <div class="col-xs col-sm col-md col-lg padfoot aligncenter">
+                            <img src="images/footerlogo.png" >
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg padfoot aligncenter">
+                            <img id="footcall" src="images/footercall.png" >
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg padfoot aligncenter ">
+                            <div class="blockcenter">
+                                <div class="twi"><div class="icon"></div></div>
+                                <div class="vk"><div class="icon"></div></div>
+                                <div class="fb"><div class="icon"></div></div>
+                                <div class="pen"><div class="icon"></div></div>
+                                <div class="rss"><div class="icon"></div></div>
+                                <div class="mail"><div class="icon"></div></div>
+                                <div class="ok"><div class="icon"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-xs col-sm col-md col-lg aligncenter">
+                            <img class="logo" src="images/footergucci.png" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-lg-1"></div>
+            </div>
+        </div>
+        <!--script id="prodTmpl" type="text/x-jquery-tmpl">
+                {{each product}}
+                    <div class="prod">
+                        {{if image}}
+                            <img src="${image}" class="thumbnail" />
+                        {{/if}}
+                        <div class="base-info">
+                            <h2>
+                                ${title}
+                            </h2>
+                            <h3>
+                                ${price}
+                            </h3>
+                            <p>
+                                ${description}
+                            </p>
+                        </div>
+                    </div> 
+                {{/each}} 
+        </script-->
+
+        <script id="prodTmpl" type="text/x-jquery-tmpl">
+            {{each product}}
+                <div class="container-fluid block3">
+                    <div class="row" >
+                        <div class="col-xs col-sm col-md col-lg">
+                            <a href="product.html#cat_id=16&id=${id}"><img src="${image}" class="thumbnail"></a>
+                        </div>
+                        
+                        <div class="col-xs col-sm col-md col-lg maintxt4">
+                            <div class="base-info">
+                                <h2>
+                                    <a href="product.html#cat_id=16&id=${id}">${title}</a>
+                                </h2>
+                                <br>
+                                <div class="row" >
+                                    <div class="col-xs col-sm col-md col-lg" >
+                                        Количество
+                                    </div>
+                                    <div class="col-xs col-sm col-md col-lg">
+                                        ${kol}
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row" >
+                                    <div class="col-xs col-sm col-md col-lg" >
+                                        Цвет
+                                    </div>
+                                    <div class="col-xs col-sm col-md col-lg">
+                                        ${color}
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row" >
+                                    <div class="col-xs col-sm col-md col-lg" >
+                                        Материал
+                                    </div>
+                                    <div class="col-xs col-sm col-md col-lg">
+                                        ${material}
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row" >
+                                    <div class="col-xs col-sm col-md col-lg" >
+                                        Производитель
+                                    </div>
+                                    <div class="col-xs col-sm col-md col-lg">
+                                        ${company}
+                                    </div>
+                                </div>
+                                <hr>
+                                <!--p>
+                                    ${description}
+                                </p-->
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="col-xs col-sm col-md col-lg aligncenter">
+                            <img src="images/nalich.png" class="contimg"><br>
+                            <s>1580 грн.</s>
+                            <h4 class="pricetag contimg button">
+                                ${price}
+                            </h4>
+                            <a href="#" data-id="${id}" data-name="${title}" data-link="cart.html" class="buy"><img src="images/buttonvkor.png" class="button"></a>
+                        </div>
+                    </div>
+                </div>
+
+            {{/each}} 
+    </script>
+
+        <script>
+            new MyShop('products.xml','category')
+        </script>
+        
+    </body>
+    
+</html>
